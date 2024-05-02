@@ -1,4 +1,4 @@
-#Flask Weather API 
+# Flask Weather API 
 This README provides instructions for setting up and running the Flask API application on macOS using Homebrew and virtual environments.
 
 ## Prerequisites
@@ -22,10 +22,9 @@ Activate the virtual environment by running:
 While in the activated virtual environment, install the project dependencies recursively using the following command:
 
 ``pip install -r requirements.txt``
-### 5. Run Python Main Application
-Run the main Python application using:
 
-## Run API
+
+## Run the API
 ### 1. Activate Python  Virtual Environment if not Activated
 Activate the virtual environment by running:
 ``python3 -m venv venv``
