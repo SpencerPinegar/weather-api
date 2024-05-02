@@ -1,4 +1,4 @@
-# Weather-Api  
+# Weather-API  
 
 ## Goal/Prompt
 
@@ -48,7 +48,7 @@ team reviewing your code has their own key to use for testing your project.
 3. Validate lat & long GET parameters`- return 400 if invalid
 4. Make Weather API Request
 5. Handle Weather Response 500 - return 500
-6. Handle Weather Response 403 - return 403
+6. Handle Weather Response 401 - return 401
 7. Handle 200 - parse data from response return formatted JSON
 
 # Example Resp From Weather API
@@ -93,8 +93,10 @@ team reviewing your code has their own key to use for testing your project.
 NOTE: We will be using the get param units=standard to ensure temperature units are in kelvin
 
 Data relevant to the project:
-Conditions - ['weather'][0]['description'] - re-use in title case
-Temperature - ['main']['feels_like']  - convert to Fahrenheit and map to feeling based on range; (Freezing, Cold, Temperate, Warm, Hot)
+
+Conditions - ['weather'][0]['description'] - Using this for conditions
+
+Temperature - ['main']['feels_like']  - Use this for feeling of temperature, convert to Fahrenheit and map to feeling based on range; (Cold, Moderate, Hot)
 
 
 
